@@ -1,19 +1,21 @@
 .deng-box {
     position: fixed;
-    top: -30px;
+    top: -45px;
     /* left: 220px; */
     left: 5px;
     z-index: 9999;
     pointer-events: none;
+    transform: scale(0.8);
 }
  
 .deng-box1 {
     position: fixed;
-    top: -30px;
+    top: -45px;
     /* right: 222px; */
     right: 5px;
     z-index: 9999;
     pointer-events: none;
+    transform: scale(0.8);
 }
  
 .deng-box1 .deng {
@@ -38,7 +40,7 @@
     background: rgba(216, 0, 15, 0.8);
     border-radius: 50% 50%;
     -webkit-transform-origin: 50% -100px;
-    -webkit-animation: swing 3s infinite ease-in-out;
+    -webkit-animation: swing 5s infinite ease-in-out;
     box-shadow: -5px 5px 50px 4px rgba(250, 108, 0, 1);
 }
  
@@ -64,10 +66,10 @@
  
 .xian {
     position: absolute;
-    top: -20px;
+    top: -35px;
     left: 60px;
     width: 2px;
-    height: 20px;
+    height: 35px;
     background: #dc8f03;
 }
  
@@ -139,7 +141,7 @@
     font-weight: bold;
     line-height: 42px;
     text-align: center;
-    width: 25px;  
+    width: 32px;  
     margin: 0 auto;  
      
 }
@@ -177,3 +179,22 @@
         -webkit-transform: rotate(-10deg)
     }
 }
+
+@media only screen and (max-width: 767px) {
+  .deng-box {
+    position: fixed;
+    top: -66px;
+    z-index: 9999;
+    pointer-events: none;
+    transform: scale(0.35);
+   }
+ 
+.deng-box1 {
+    position: fixed;
+    top: -66px;
+    z-index: 9999;
+    pointer-events: none;
+    transform: scale(0.35);
+   }
+}
+   
