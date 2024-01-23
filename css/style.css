@@ -1,0 +1,522 @@
+/*顶部进度条特效*/
+#percentageCounter{
+    position:fixed;
+    left:0; 
+    top:0; 
+    height:3px; 
+    z-index:99999; 
+    background-image: linear-gradient(to right, #09F253,#FF6666);
+    border-radius:5px;
+    
+}
+/* 顶部进度条特效结束 */
+
+/*logo闪动平移特效*/
+@keyframes shine {
+  0% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  50% {
+    opacity: 0.5;
+    transform: translateX(18px); /* 改变这个值 */
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.logo {
+  animation: shine 3s infinite; /* 调整动画的持续时间和其他参数 */
+}
+/*logo闪动平移特效结束*/
+
+/* 设置小工具样式 */
+    /* 修改小工具标题圆圈Mac样式颜色-经典classic */
+body .widget-title-mac:before {
+    background-color: #30EBD8;
+}
+body .widget-title-mac:after {
+    background-color: #09F253;
+}
+    /* 图片小工具无边框配置 */
+div.aside-box.widget_media_image {
+    padding: unset;
+}
+.widget_image {
+    /* 设置图片宽度为100%，高度为100% */
+    width: 100%;
+    height: 100%;
+}
+
+/* 设置小工具样式结束 */
+
+
+/* 设置图片圆角为10像素 */
+.rounded-corner {
+    border-radius: 10px;
+}
+
+/* 设置广告样式*/
+.image-container {
+    position: relative;
+}
+
+.advertisement {
+    position: absolute;
+    bottom: 5px; /* 可以根据需要调整位置 */
+    right: 0px; /* 调整到右下角，可以根据需要调整位置 */
+    background-color: rgba(128, 128, 128, 0.7); /* 设置透明度为0.7的灰色背景 */
+    color: white;
+    padding: 3px; /* 调整 padding */
+    border-radius: 10px; /* 调整圆角 */
+    font-size: 13px; /* 调整字体大小 */
+}
+/* 设置广告样式结束*/
+
+/**首页文章悬浮效果*/
+@media (min-width: 768px) {
+.post-item:hover {
+	background: #edededba;
+	transform: scale(1.03);
+	-webkit-transform: scale(1.03);
+	-moz-transform: scale(1.03);
+	-o-transform: scale(1.03);
+	-ms-transform: scale(1.03);
+	box-shadow:5px 5px 10px gray;
+}
+}
+/**首页文章悬浮效果结束*/
+
+/*文字颜色变幻*/
+.color-change{
+    animation:change 10s infinite;font-weight:800; 
+    
+}
+@keyframes change{
+    0%{color:#5cb85c;}
+    20%{color:#556bd8;}
+    40%{color:#9F253;}
+    60%{color:#e40707;}
+    80%{color:#66e616;}
+    100% {color:#67bd31;}
+    
+}
+/*文字颜色变幻结束*/
+
+/* Github卡片样式*/
+.github-info-card-header a {
+    /*Github卡片抬头颜色*/
+    color: black !important;
+    font-size: 1.5rem;
+}
+html.darkmode .github-info-card-header a {
+    /*Github卡片抬头颜色——夜间*/
+    color: #FAAB78 !important;
+    font-size: 1.5rem;
+}
+.github-info-card {
+    /*Github卡片文字（非链接）*/
+    font-size: 1rem;
+    color: black !important;
+}
+html.darkmode .github-info-card {
+    /*Github卡片文字（非链接）——夜间*/
+    font-size: 1rem;
+    color: #FAAB78 !important;
+}
+.github-info-card.github-info-card-full.card.shadow-sm {
+    /*Github卡片背景色*/
+    background-color: rgba(var(--themecolor-rgbstr), 0.1) !important;
+}
+/* Github卡片样式结束*/
+
+/*文字抖动特效*/
+.my-face {
+  -webkit-animation: my-face 5s infinite ease-in-out;
+          animation: my-face 5s infinite ease-in-out;
+  display: inline-block;
+  margin: 0 5px;
+}
+
+@-webkit-keyframes my-face {
+  2%,
+  24%,
+  80% {
+    -webkit-transform: translate(0, 1.5px) rotate(1.5deg);
+            transform: translate(0, 1.5px) rotate(1.5deg);
+  }
+  4%,
+  68%,
+  98% {
+    -webkit-transform: translate(0, -1.5px) rotate(-0.5deg);
+            transform: translate(0, -1.5px) rotate(-0.5deg);
+  }
+  38%,
+  6% {
+    -webkit-transform: translate(0, 1.5px) rotate(-1.5deg);
+            transform: translate(0, 1.5px) rotate(-1.5deg);
+  }
+  8%,
+  86% {
+    -webkit-transform: translate(0, -1.5px) rotate(-1.5deg);
+            transform: translate(0, -1.5px) rotate(-1.5deg);
+  }
+  10%,
+  72% {
+    -webkit-transform: translate(0, 2.5px) rotate(1.5deg);
+            transform: translate(0, 2.5px) rotate(1.5deg);
+  }
+  12%,
+  64%,
+  78%,
+  96% {
+    -webkit-transform: translate(0, -0.5px) rotate(1.5deg);
+            transform: translate(0, -0.5px) rotate(1.5deg);
+  }
+  14%,
+  54% {
+    -webkit-transform: translate(0, -1.5px) rotate(1.5deg);
+            transform: translate(0, -1.5px) rotate(1.5deg);
+  }
+  16% {
+    -webkit-transform: translate(0, -0.5px) rotate(-1.5deg);
+            transform: translate(0, -0.5px) rotate(-1.5deg);
+  }
+  18%,
+  22% {
+    -webkit-transform: translate(0, 0.5px) rotate(-1.5deg);
+            transform: translate(0, 0.5px) rotate(-1.5deg);
+  }
+  20%,
+  36%,
+  46% {
+    -webkit-transform: translate(0, -1.5px) rotate(2.5deg);
+            transform: translate(0, -1.5px) rotate(2.5deg);
+  }
+  26%,
+  50% {
+    -webkit-transform: translate(0, 0.5px) rotate(0.5deg);
+            transform: translate(0, 0.5px) rotate(0.5deg);
+  }
+  28% {
+    -webkit-transform: translate(0, 0.5px) rotate(1.5deg);
+            transform: translate(0, 0.5px) rotate(1.5deg);
+  }
+  30%,
+  40%,
+  62%,
+  76%,
+  88% {
+    -webkit-transform: translate(0, -0.5px) rotate(2.5deg);
+            transform: translate(0, -0.5px) rotate(2.5deg);
+  }
+  32%,
+  34%,
+  66% {
+    -webkit-transform: translate(0, 1.5px) rotate(-0.5deg);
+            transform: translate(0, 1.5px) rotate(-0.5deg);
+  }
+  42% {
+    -webkit-transform: translate(0, 2.5px) rotate(-1.5deg);
+            transform: translate(0, 2.5px) rotate(-1.5deg);
+  }
+  44%,
+  70% {
+    -webkit-transform: translate(0, 1.5px) rotate(0.5deg);
+            transform: translate(0, 1.5px) rotate(0.5deg);
+  }
+  48%,
+  74%,
+  82% {
+    -webkit-transform: translate(0, -0.5px) rotate(0.5deg);
+            transform: translate(0, -0.5px) rotate(0.5deg);
+  }
+  52%,
+  56%,
+  60% {
+    -webkit-transform: translate(0, 2.5px) rotate(2.5deg);
+            transform: translate(0, 2.5px) rotate(2.5deg);
+  }
+  58% {
+    -webkit-transform: translate(0, 0.5px) rotate(2.5deg);
+            transform: translate(0, 0.5px) rotate(2.5deg);
+  }
+  84% {
+    -webkit-transform: translate(0, 1.5px) rotate(2.5deg);
+            transform: translate(0, 1.5px) rotate(2.5deg);
+  }
+  90% {
+    -webkit-transform: translate(0, 2.5px) rotate(-0.5deg);
+            transform: translate(0, 2.5px) rotate(-0.5deg);
+  }
+  92% {
+    -webkit-transform: translate(0, 0.5px) rotate(-0.5deg);
+            transform: translate(0, 0.5px) rotate(-0.5deg);
+  }
+  94% {
+    -webkit-transform: translate(0, 2.5px) rotate(0.5deg);
+            transform: translate(0, 2.5px) rotate(0.5deg);
+  }
+  0%,
+  100% {
+    -webkit-transform: translate(0, 0) rotate(0);
+            transform: translate(0, 0) rotate(0);
+  }
+}
+
+@keyframes my-face {
+  2%,
+  24%,
+  80% {
+    -webkit-transform: translate(0, 1.5px) rotate(1.5deg);
+            transform: translate(0, 1.5px) rotate(1.5deg);
+  }
+  4%,
+  68%,
+  98% {
+    -webkit-transform: translate(0, -1.5px) rotate(-0.5deg);
+            transform: translate(0, -1.5px) rotate(-0.5deg);
+  }
+  38%,
+  6% {
+    -webkit-transform: translate(0, 1.5px) rotate(-1.5deg);
+            transform: translate(0, 1.5px) rotate(-1.5deg);
+  }
+  8%,
+  86% {
+    -webkit-transform: translate(0, -1.5px) rotate(-1.5deg);
+            transform: translate(0, -1.5px) rotate(-1.5deg);
+  }
+  10%,
+  72% {
+    -webkit-transform: translate(0, 2.5px) rotate(1.5deg);
+            transform: translate(0, 2.5px) rotate(1.5deg);
+  }
+  12%,
+  64%,
+  78%,
+  96% {
+    -webkit-transform: translate(0, -0.5px) rotate(1.5deg);
+            transform: translate(0, -0.5px) rotate(1.5deg);
+  }
+  14%,
+  54% {
+    -webkit-transform: translate(0, -1.5px) rotate(1.5deg);
+            transform: translate(0, -1.5px) rotate(1.5deg);
+  }
+  16% {
+    -webkit-transform: translate(0, -0.5px) rotate(-1.5deg);
+            transform: translate(0, -0.5px) rotate(-1.5deg);
+  }
+  18%,
+  22% {
+    -webkit-transform: translate(0, 0.5px) rotate(-1.5deg);
+            transform: translate(0, 0.5px) rotate(-1.5deg);
+  }
+  20%,
+  36%,
+  46% {
+    -webkit-transform: translate(0, -1.5px) rotate(2.5deg);
+            transform: translate(0, -1.5px) rotate(2.5deg);
+  }
+  26%,
+  50% {
+    -webkit-transform: translate(0, 0.5px) rotate(0.5deg);
+            transform: translate(0, 0.5px) rotate(0.5deg);
+  }
+  28% {
+    -webkit-transform: translate(0, 0.5px) rotate(1.5deg);
+            transform: translate(0, 0.5px) rotate(1.5deg);
+  }
+  30%,
+  40%,
+  62%,
+  76%,
+  88% {
+    -webkit-transform: translate(0, -0.5px) rotate(2.5deg);
+            transform: translate(0, -0.5px) rotate(2.5deg);
+  }
+  32%,
+  34%,
+  66% {
+    -webkit-transform: translate(0, 1.5px) rotate(-0.5deg);
+            transform: translate(0, 1.5px) rotate(-0.5deg);
+  }
+  42% {
+    -webkit-transform: translate(0, 2.5px) rotate(-1.5deg);
+            transform: translate(0, 2.5px) rotate(-1.5deg);
+  }
+  44%,
+  70% {
+    -webkit-transform: translate(0, 1.5px) rotate(0.5deg);
+            transform: translate(0, 1.5px) rotate(0.5deg);
+  }
+  48%,
+  74%,
+  82% {
+    -webkit-transform: translate(0, -0.5px) rotate(0.5deg);
+            transform: translate(0, -0.5px) rotate(0.5deg);
+  }
+  52%,
+  56%,
+  60% {
+    -webkit-transform: translate(0, 2.5px) rotate(2.5deg);
+            transform: translate(0, 2.5px) rotate(2.5deg);
+  }
+  58% {
+    -webkit-transform: translate(0, 0.5px) rotate(2.5deg);
+            transform: translate(0, 0.5px) rotate(2.5deg);
+  }
+  84% {
+    -webkit-transform: translate(0, 1.5px) rotate(2.5deg);
+            transform: translate(0, 1.5px) rotate(2.5deg);
+  }
+  90% {
+    -webkit-transform: translate(0, 2.5px) rotate(-0.5deg);
+            transform: translate(0, 2.5px) rotate(-0.5deg);
+  }
+  92% {
+    -webkit-transform: translate(0, 0.5px) rotate(-0.5deg);
+            transform: translate(0, 0.5px) rotate(-0.5deg);
+  }
+  94% {
+    -webkit-transform: translate(0, 2.5px) rotate(0.5deg);
+            transform: translate(0, 2.5px) rotate(0.5deg);
+  }
+  0%,
+  100% {
+    -webkit-transform: translate(0, 0) rotate(0);
+            transform: translate(0, 0) rotate(0);
+  }
+}
+/*文字抖动特效结束*/
+
+
+/*首页文章缩略图去标签*/
+.cat-float {
+    display: none;
+}
+/*首页文章缩略图去标签结束*/
+
+/*文章图片居中*/
+.core-next-img {
+    display: block;
+    margin: 0 auto;
+}
+/*文章图片居中结束*/
+
+
+/** 文章底部彩色标签 */
+.post-tags{margin-bottom: 10px}
+.post-tags a{
+    padding: 4px 10px;
+    background-color: #19B5FE;
+    color: white;font-size: 12px;
+    font-weight:bold;
+    line-height: 16px;
+    font-weight: 400;
+    margin: 0 5px 5px 0;
+    border-radius: 10px;
+    display: inline-block
+    }
+.post-tags a:nth-child(5n){background-color: #6022c3;color: #FFF}
+.post-tags a:nth-child(5n+1){background-color: #ff5e5c;color: #FFF}
+.post-tags a:nth-child(5n+2){background-color: #ffbb50;color: #FFF}
+.post-tags a:nth-child(5n+3){background-color: #1ac756;color: #FFF}
+.post-tags a:nth-child(5n+4){background-color: #19B5FE;color: #FFF}
+.post-tags a:hover{background-color: #1B1B1B;color: #FFF}
+/** 文章底部彩色标签结束 */
+
+/*站点时间轴*/
+#timeaxis ol {
+    list-style:none;
+    margin-left:7px;
+    padding-left:14px;
+    border-left:2px solid #eee;
+    font-size:16px;
+}
+#timeaxis b {
+    font-size:14px;
+    font-weight:normal;
+    display:block;
+    position:relative;
+    margin-bottom:5px;
+}
+#timeaxis b::after {
+    position:absolute;
+    top:6px;
+    left:-24px;
+    content:'';
+    width:14px;
+    height:14px;
+    border-radius:50%;
+    background-color:#fff;
+    border:2px solid #ccc
+}
+#timeaxis li {
+    list-style:none;
+    margin:0 0 18px 0;
+    line-height:100%;
+}
+#timeaxis li:hover {
+    color:#09F253;
+}
+#timeaxis li:hover b::after {
+    border-color:#248888;
+}
+#timeaxis a {
+	color:#606266;
+}
+#timeaxis a:hover {
+	color:#09F253;
+}
+#timeaxis li:hover b {
+    color:#248888;
+}
+/*站点时间轴结束*/
+
+/*右侧上下滚轮美化*/
+::-webkit-scrollbar {
+	width: 8px;  
+	height: 5px;
+}
+::-webkit-scrollbar-thumb {
+	background-color: #87CEEB;
+	background-image: -webkit-linear-gradient(45deg, rgba(238,63,77, 1) 25%, transparent 25%, transparent 50%, rgba(238,63,77, 1) 50%, rgba(238,63,77, 1) 75%, transparent 75%, transparent);
+}
+::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+	background: #f6f6f6;
+}
+
+html.darkmode ::-webkit-scrollbar-track{
+	background-color:#282828;
+}
+/*右侧上下滚轮美化结束*/
+
+/* 取消文章内容区域链接的下划线 */
+.post-warp .content-warp a {
+    text-decoration: none;
+}
+/* 取消文章内容区域链接的下划线结束 */
+
+/* footer-right底部二维码图片大小设定 */
+.core-footer .footer-right img {
+    max-width: 28%;
+}
+/* footer-right底部二维码图片大小设定结束 */
+
+/*评论区已登录用户头像居中*/
+.logged-in-as {
+    text-align: center;
+    max-width: 100px;
+    margin-right: 10px;
+    z-index: 10;
+    display: flex;
+    margin-top: 10px;
+    padding: 10px;
+    align-items: center;
+    flex-direction: column;
+}
+/*评论区已登录用户头像居中结束*/
