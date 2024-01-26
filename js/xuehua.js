@@ -93,8 +93,8 @@
     i.prototype = {
         createEl: function(a, b) {
             this.el = document.createElement("img");
-            this.el.setAttribute("src", b + "https://api.dujin.org/js/xiaxue/" + Math.floor(Math.random() * 4) + ".gif"); /* ע���޸�Ϊ�ĸ�ѩ���ļ����ڵ�Ŀ¼��ַ */
-			/* this.el.setAttribute("src", b + "https://fastly.jsdelivr.net/gh/huangwb8/bloghelper@latest/js/xiaxue/" + Math.floor(Math.random() * 4) + ".gif"); ע���޸�Ϊ�ĸ�ѩ���ļ����ڵ�Ŀ¼��ַ */
+	    this.el.setAttribute("src", b + "https://cdn.jsdelivr.net/gh/watlam/Figurebed/image/xuehua/" + Math.floor(Math.random() * 4) + ".gif");
+            /*this.el.setAttribute("src", b + "https://api.dujin.org/js/xiaxue/" + Math.floor(Math.random() * 4) + ".gif");  雪花图片API链接，如果上面链接访问不了，请启用该链接*/		
             this.el.style.position = "absolute";
             this.el.style.display = "block";
             this.el.style.zIndex = "99999";
