@@ -45,7 +45,7 @@
     function i(a) {
         this.parent = document.body;
         this.createEl(this.parent, a);
-        this.size = Math.random() * 10 + 15; /* �������ֿ���ѩ���Ĵ�С��Ŀǰ�������ѩ���ߴ�Ϊ10~25px */
+        this.size = Math.random() * 10 + 15; 
         this.el.style.width = Math.round(this.size) + "px";
         this.el.style.height = Math.round(this.size) + "px";
         this.maxLeft = document.body.offsetWidth - this.size;
